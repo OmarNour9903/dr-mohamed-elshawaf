@@ -39,8 +39,15 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="oral-serum.html">مصل الفم</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="serumDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              أدلة استخدام الأمصال
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="serumDropdown">
+              <li><a class="dropdown-item" href="oral-serum.html">مصل الفم (البيئي)</a></li>
+              <li><a class="dropdown-item" href="milk-serum.html">مصل الألبان</a></li>
+              <li><a class="dropdown-item" href="food-serum.html">مصل الأطعمة الأخرى</a></li>
+            </ul>
           </li>
         </ul>
         <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0">
@@ -179,7 +186,7 @@
               <i data-lucide="Stethoscope"></i>
             </div>
             <h3 class="h5 fw-bold mb-3">حساسية الأنف والجيوب الأنفية</h3>
-            <p class="text-slate-500 mb-0 small">علاج الرشح المزمن، حكة الأنف، العطس المتكرر، وانسداد الأنف الناتج عن حساسية الجيوب الأنفية، بما يضمن تنفساً طبيعياً ونوماً مريحاً.</p>
+            <p class="text-slate-500 mb-0 small">علاج الرشح المزمن، حكة الأنف، العطس المتكرر، وانسداد الأنف الناتج عن حساسية الأنف والجيوب الأنفية، بما يضمن تنفساً طبيعياً ونوماً مريحاً.</p>
           </div>
         </div>
         <!-- Service 3 -->
@@ -208,8 +215,8 @@
             <div class="medical-card-icon">
               <i data-lucide="Syringe"></i>
             </div>
-            <h3 class="h5 fw-bold mb-3">حساسية الأطعمة والأدوية</h3>
-            <p class="text-slate-500 mb-0 small">فحوصات مخصصة لتحديد الأغذية والعقاقير الطبية المسببة للتحسس، مع تقديم استشارات غذائية وبدائل آمنة لتجنب الصدمات التحسسية الخطيرة.</p>
+            <h3 class="h5 fw-bold mb-3">حساسية الطعام</h3>
+            <p class="text-slate-500 mb-0 small">فحوصات مخصصة لتحديد الأغذية المسببة للتحسس، وإعطاء أمصال للطعام المسبب للحساسية مع تقديم استشارات غذائية وبدائل آمنة لتجنب الصدمات التحسسية الخطيرة.</p>
           </div>
         </div>
         <!-- Service 6 -->
@@ -220,6 +227,16 @@
             </div>
             <h3 class="h5 fw-bold mb-3">حساسية الأطفال وتغذية مناعية</h3>
             <p class="text-slate-500 mb-0 small">رعاية فائقة للأطفال المصابين بالحساسية منذ الرضاعة، وتصميم برامج متخصصة للتغذية المناعية التي تعزز دفاعات الطفل وتحد من تدهور الحساسية.</p>
+          </div>
+        </div>
+        <!-- Service 7 -->
+        <div class="col-md-6 col-lg-4 reveal">
+          <div class="medical-card">
+            <div class="medical-card-icon">
+              <i data-lucide="Bug"></i>
+            </div>
+            <h3 class="h5 fw-bold mb-3">حساسية الحشرات</h3>
+            <p class="text-slate-500 mb-0 small">تشخيص وعلاج التحسس الناتج عن لدغ النحل، الناموس والحشرات الأخرى، مع إعطاء أمصال الحساسية اللازمة وتوفير إرشادات للوقاية وتجنب التفاعلات الشديدة.</p>
           </div>
         </div>
       </div>
@@ -242,10 +259,48 @@
           <p class="text-slate-600 mb-4">
             نقوم في عياداتنا بإجراء <strong>اختبارات الحساسية بالوخز (Skin Prick Test)</strong> فائقة الدقة لتحديد المواد المهيجة بدقة متناهية، وبناءً على ذلك نقوم بتركيب الأمصال العلاجية الخاصة بكل حالة، سواء كانت على هيئة قطرات تحت اللسان أو حقن تحت الجلد، للوصول بالمريض لبر الأمان والتوقف التام عن استخدام بخاخات الصدر والأنف وأدوية الحساسية اليومية.
           </p>
-          <div class="mt-4">
+          <!-- Key Serum Highlights -->
+          <div class="d-flex flex-column gap-2 mb-4">
+            <div class="d-flex align-items-center gap-2 p-3 rounded-3" style="background-color: rgba(20, 184, 166, 0.06); border: 1px solid rgba(20, 184, 166, 0.15);">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-circle flex-shrink-0" style="width:36px;height:36px;background-color:rgba(20,184,166,0.12);color:var(--primary);">
+                <i data-lucide="Leaf" style="width:18px;height:18px;"></i>
+              </div>
+              <div>
+                <span class="fw-bold text-slate-800 small">مستخلص بيئي طبيعي</span>
+                <p class="mb-0 text-slate-500" style="font-size:0.8rem;">يُحضَّر المصل من مستخلص طبيعي مباشرة من المادة المسببة للحساسية ذاتها، لتدريب الجهاز المناعي عليها بأمان.</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 p-3 rounded-3" style="background-color: rgba(37, 99, 235, 0.06); border: 1px solid rgba(37, 99, 235, 0.15);">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-circle flex-shrink-0" style="width:36px;height:36px;background-color:rgba(37,99,235,0.1);color:var(--secondary);">
+                <i data-lucide="ShieldCheck" style="width:18px;height:18px;"></i>
+              </div>
+              <div>
+                <span class="fw-bold text-slate-800 small">آمن وفعال وموثوق علمياً</span>
+                <p class="mb-0 text-slate-500" style="font-size:0.8rem;">العلاج المناعي بالأمصال معتمد دولياً بسجل أمان ممتاز لدى الأطفال والبالغين.</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 p-3 rounded-3" style="background-color: rgba(139, 92, 246, 0.06); border: 1px solid rgba(139, 92, 246, 0.15);">
+              <div class="d-inline-flex align-items-center justify-content-center rounded-circle flex-shrink-0" style="width:36px;height:36px;background-color:rgba(139,92,246,0.1);color:#7C3AED;">
+                <i data-lucide="CircleOff" style="width:18px;height:18px;"></i>
+              </div>
+              <div>
+                <span class="fw-bold text-slate-800 small">لا يحتوي على أدوية أو كورتيزون</span>
+                <p class="mb-0 text-slate-500" style="font-size:0.8rem;">المصل خالٍ تماماً من أي مواد كيميائية دوائية أو كورتيزون، وليس له الآثار الجانبية المرتبطة بهما.</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
             <a href="oral-serum.html" class="btn btn-outline-custom d-inline-flex align-items-center gap-2">
-              <span>تفاصيل وطريقة استخدام مصل الفم</span>
-              <i data-lucide="ClipboardList" style="width: 18px; height: 18px;"></i>
+              <i data-lucide="Syringe" style="width: 18px; height: 18px;"></i>
+              <span>مصل الفم (البيئي)</span>
+            </a>
+            <a href="milk-serum.html" class="btn btn-outline-custom d-inline-flex align-items-center gap-2">
+              <i data-lucide="Milk" style="width: 18px; height: 18px;"></i>
+              <span>مصل الحساسية للألبان</span>
+            </a>
+            <a href="food-serum.html" class="btn btn-outline-custom d-inline-flex align-items-center gap-2">
+              <i data-lucide="Egg" style="width: 18px; height: 18px;"></i>
+              <span>مصل الأطعمة الأخرى</span>
             </a>
           </div>
         </div>
@@ -280,11 +335,19 @@
               <i data-lucide="MapPinned"></i>
             </div>
             <h3 class="h4 fw-bold mb-3 text-slate-900">عيادة القاهرة</h3>
-            <p class="text-slate-600 flex-grow-1">
+            <p class="text-slate-600">
               5 شارع جامعة الدول العربية - سور نادي الزمالك - عيادات ITC - الدور السادس (أعلى كافيه دليدا).
             </p>
-            <div class="mt-4 pt-3 border-top border-slate-100">
-              <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-outline-custom w-100 d-flex align-items-center justify-content-center gap-2">
+            <div class="mt-3 rounded-3 overflow-hidden" style="border: 1px solid rgba(226,232,240,0.8);">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3453.333521076568!2d31.205744684884603!3d30.055972981878153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDAzJzIxLjUiTiAzMcKwMTInMTIuOCJF!5e0!3m2!1sar!2seg!4v1783619680750!5m2!1sar!2seg"
+                width="100%" height="220" style="border:0; display:block;"
+                allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                title="خريطة عيادة القاهرة">
+              </iframe>
+            </div>
+            <div class="mt-3 pt-3 border-top border-slate-100">
+              <a href="https://maps.google.com/?q=30.055972,31.20370" target="_blank" rel="noopener" class="btn btn-outline-custom w-100 d-flex align-items-center justify-content-center gap-2">
                 <i data-lucide="MapPinned" style="width: 18px; height: 18px;"></i>
                 <span>فتح على Google Maps</span>
               </a>
@@ -299,11 +362,19 @@
               <i data-lucide="MapPinned"></i>
             </div>
             <h3 class="h4 fw-bold mb-3 text-slate-900">عيادة المنصورة</h3>
-            <p class="text-slate-600 flex-grow-1">
+            <p class="text-slate-600">
               ميدان محطة القطار - برج الأطباء - الدور العاشر (أعلى صيدلية سالي).
             </p>
-            <div class="mt-4 pt-3 border-top border-slate-100">
-              <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-outline-custom w-100 d-flex align-items-center justify-content-center gap-2">
+            <div class="mt-3 rounded-3 overflow-hidden" style="border: 1px solid rgba(226,232,240,0.8);">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3418.2916665952757!2d31.38979768486095!3d31.04597898152918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDAyJzQ1LjUiTiAzMcKwMjMnMTUuNCJF!5e0!3m2!1sar!2seg!4v1783619715252!5m2!1sar!2seg"
+                width="100%" height="220" style="border:0; display:block;"
+                allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+                title="خريطة عيادة المنصورة">
+              </iframe>
+            </div>
+            <div class="mt-3 pt-3 border-top border-slate-100">
+              <a href="https://maps.google.com/?q=31.045978,31.38854" target="_blank" rel="noopener" class="btn btn-outline-custom w-100 d-flex align-items-center justify-content-center gap-2">
                 <i data-lucide="MapPinned" style="width: 18px; height: 18px;"></i>
                 <span>فتح على Google Maps</span>
               </a>
