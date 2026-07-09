@@ -604,3 +604,107 @@ i[data-lucide] {
   border-left: 0.3em solid transparent;
 }
 
+/* ===== Mobile Hero Layout ===== */
+.hero-mobile-layout {
+  padding: 0;
+}
+
+/* Image in row 2: fixed width beside title */
+.hero-mobile-img-wrap {
+  width: 42%;
+}
+
+.hero-mobile-img-wrap .hero-image-container {
+  padding: 6px;
+  border-radius: 14px;
+}
+
+.hero-mobile-img-wrap .hero-image {
+  border-radius: 10px;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Title block beside image */
+.hero-mobile-title-block {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-title-mobile {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+/* Subtitle below image+title row */
+.hero-subtitle-mobile {
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Description below subtitle */
+.hero-description-mobile {
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+/* Small phones (< 380px) */
+@media (max-width: 380px) {
+  .hero-mobile-img-wrap {
+    width: 38%;
+  }
+
+  .hero-mobile-img-wrap .hero-image {
+    height: 150px;
+  }
+
+  .hero-title-mobile {
+    font-size: 1rem;
+  }
+
+  .hero-subtitle-mobile {
+    font-size: 0.8rem;
+  }
+
+  .hero-description-mobile {
+    font-size: 0.8rem;
+  }
+}
+
+/* Medium phones (380px–575px) */
+@media (min-width: 381px) and (max-width: 575px) {
+  .hero-mobile-img-wrap .hero-image {
+    height: 190px;
+  }
+
+  .hero-title-mobile {
+    font-size: 1.25rem;
+  }
+}
+
+/* Tablet (576px–991px) */
+@media (min-width: 576px) and (max-width: 991px) {
+  .hero-mobile-img-wrap {
+    width: 36%;
+  }
+
+  .hero-mobile-img-wrap .hero-image {
+    height: 240px;
+  }
+
+  .hero-title-mobile {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle-mobile {
+    font-size: 1.05rem;
+  }
+
+  .hero-description-mobile {
+    font-size: 1rem;
+  }
+}
+
